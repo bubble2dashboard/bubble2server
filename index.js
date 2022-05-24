@@ -13,7 +13,8 @@ const User = require('./models/User.js');
 
 connectDB();
 
-app.listen(5000, function () {
+const port =process.env.PORT || 5000;
+app.listen(port, function () {
 	console.log('server is listening at port 5000');
 });
 
